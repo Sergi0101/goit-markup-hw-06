@@ -1,0 +1,101 @@
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Проміжок між елементами навігації */
+}
+
+.logo {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 40px; /* Відступ між логотипом і навігацією */
+}
+
+.logo-accent {
+  color: #2e2f42;
+}
+
+.navi-link {
+  color: #2e2f42;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.navi-link:hover,
+.navi-link:focus {
+  color: #404bbf;
+  text-decoration: none;
+}
+
+.address-list {
+  display: flex;
+  gap: 20px; /* Відстань між email і номером телефону */
+  align-items: center;
+}
+
+.address-link {
+  color: #434455;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+
+/* Hero */
+.hero-section {
+  max-width: 1158px;
+  background-color: #2e2f42;
+  padding: 60px 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #4d5ae5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+}
