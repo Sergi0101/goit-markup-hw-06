@@ -546,7 +546,6 @@ h3 {
   fill: #f4f4fd;
 }
 
-
 .subscribe {
   width: 453px;
   max-height: 80px;
@@ -604,7 +603,6 @@ h3 {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
 }
 .subscribe-icon {
   fill: #ffffff;
