@@ -401,18 +401,24 @@ h3 {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/people-office-mob-min.jpeg),
-    url(../images/hero/people-office-mob@2x-min.jpeg);
+    url(../images/hero/people-office-mob-min.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* max-width: 1440px; */
   margin: 0 auto;
   width: 100%;
-  /* padding: 188px 0; */
   max-width: 320px;
-  padding: 72px 0;
-}
+  padding: 72px 0;}
+
+  @media (min-resolution: 192dpi), (min-resolution: 2x){
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-mob@2x-min.jpeg);
+  }
+  }
 
 .hero-title {
   font-weight: 700;
@@ -463,35 +469,59 @@ h3 {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/people-office-tab-min.jpeg),
-      url(../images/hero/people-office-tab@2x-min.jpeg);
+      url(../images/hero/people-office-tab-min.jpeg);
     max-width: 768px;
     padding: 112px 0;
   }
-  .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    max-width: 496px;
+  @media (min-resolution: 192dpi), (min-resolution: 2x){
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-tab@2x-min.jpeg);
   }
-  .button {
-    margin-top: 36px;
   }
 }
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  max-width: 496px;
+}
+.button {
+  margin-top: 36px;
+}
+
+
+
+
 @media screen and (min-width: 1158px) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(./images/hero/people-office-desk-min.jpeg),
-      url(../images/hero/people-office-desk@2x-min.jpeg);
+      url(../images/hero/people-office-desk-min.jpeg);
     padding: 188px 0;
     max-width: 1440px;
   }
-  .button {
-    margin-top: 48px;
+  @media (min-resolution: 192dpi), (min-resolution: 2x){
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-desk@2x-min.jpeg);
+  }
   }
 }
+
+.button {
+  margin-top: 48px;
+}
+
+
 
 /*#endregion hero */
 
@@ -996,7 +1026,7 @@ h3 {
     padding: 100px 0;
   }
   .coneiner-logo {
-    padding: 0;
+    padding: 0 15px;
     flex-wrap: nowrap;
     align-items: baseline;
   }
@@ -1009,7 +1039,7 @@ h3 {
 
   .subscribe {
     padding-top: 0;
-    padding-left: 80px;
+    margin-left: 80px;
     margin-top: 0;
   }
 }
